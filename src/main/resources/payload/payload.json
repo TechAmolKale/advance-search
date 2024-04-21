@@ -1,0 +1,32 @@
+{
+    "entities": [
+        "AEntity",
+        "BEntity",
+        "CEntity"
+    ],
+    "joins": [
+        {
+            "entityIndex": "0",
+            "association": "bentity",
+            "conditions": {
+                "field1": "id",
+                "field2": "id"
+            }
+        },
+        {
+            "entityIndex": "1",
+            "association": "centity",
+            "conditions": {
+                "field1": "bId",
+                "field2": "bId"
+            }
+        }
+    ],
+    "whereConditions": [
+        {
+            "entityIndex": "2",
+            "field": "field1",
+            "value": "cValue1"
+        }
+    ]
+}
